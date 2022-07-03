@@ -109,12 +109,5 @@ JOIN progress
   ON users.user_id = progress.user_id
   WHERE city = 'Chicago'
   GROUP BY 1;
--- 
-SELECT u.email_domain, p.learn_cpp, p.learn_sql, p.learn_html, p.learn_javascript, p.learn_java
-FROM users u
-LEFT JOIN progress p
-ON u.user_id = p.user_id
-GROUP BY 1
-ORDER BY 1
-LIMIT 10;
+
 
